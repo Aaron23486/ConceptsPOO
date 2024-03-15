@@ -2,20 +2,35 @@
 using System.Linq.Expressions;
 using ConceptsPOO;
 using static System.Runtime.InteropServices.JavaScript.JSType;
-using Date = ConceptsPOO.Date;
-
+namespace ConceptsPOO
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
 Console.WriteLine("POO Concepts");
 Console.WriteLine("===============");
-
-try
+            SalaryEmployee employee1 = new SalaryEmployee()
 {
+                Id = 1010,
+                FirstName = "Sandra",
+                LastName = "Morales",
+                BirthDate = new DateTime(1990, 5, 23),
+                HiringDate = new DateTime(2022, 1, 15),
+                IsActive = true,
+        Salary = 1815453.45M,
+            };
+            Console.WriteLine(employee1);
 
-    Console.WriteLine(new Date(2024, 2, 29));
-    Console.WriteLine(new Date(1974, 9, 23));
-    Console.WriteLine(new Date(1985, 11, 30));
-
+       Employee employee2 = new CommissionEmploye()
+       {
+           Id = 1010,
+           FirstName = "Sandra",
+           LastName = "Morales",
+           BirthDate = new DateTime(1990, 5, 23),
+           HiringDate = new DateTime(2022, 1, 15),
+           IsActive = true,
+       };
+        }
 }
-catch (Exception error)
-{
-    Console.WriteLine(error.Message);
 }

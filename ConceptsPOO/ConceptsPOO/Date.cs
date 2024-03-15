@@ -17,12 +17,12 @@ namespace ConceptsPOO
         {
             _year = year;
             _month = CheckMonth(month);
-            _day = Checkday(year, month, day);
+            _day = CheckDay(year, month, day);
         }
 
-        private int Checkday(int year, int month, int day)
+        private int CheckDay(int year, int month, int day)
         {
-            if (month == 2 && day == 29 == Isleapyear(year))
+            if (month == 2 && day == 29 && IsLeapYear(year))
             {
                 return day;
             }
@@ -36,9 +36,9 @@ namespace ConceptsPOO
             throw new DayException("Invalid day");
         }
 
-        private bool Isleapyear(int year)
+        private bool IsLeapYear(int year)
         {
-            return year % 400 == 0 || year % 4 == 0 && year % 100 != 0;
+            return year % 400 == 0 || (year % 4 == 0 && year % 100 != 0);
         }
 
         private int CheckMonth(int month)
