@@ -1,7 +1,4 @@
 ﻿// See https://aka.ms/new-console-template for more information
-using System.Linq.Expressions;
-using ConceptsPOO;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 namespace ConceptsPOO
 {
  class Program
