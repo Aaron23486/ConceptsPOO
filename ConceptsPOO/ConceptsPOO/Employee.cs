@@ -14,9 +14,9 @@ namespace ConceptsPOO
 
         public string LastName { get; set; }
 
-        public DateTime BirthDate { get; set; }  // Cambiado de Date a DateTime
+        public DateTime BirthDate { get; set; }
 
-        public DateTime HiringDate { get; set; }  // Cambiado de Date a DateTime
+        public DateTime HiringDate { get; set; }
 
         public bool IsActive { get; set; }
 
